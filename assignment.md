@@ -21,7 +21,8 @@ Each entity has the following attributes:
 Answer:
 
 ```dbml
-
+![Alt text](images/SocialMediaPostsandFollowers.png)
+![Alt text](https://github.com/lexman29125/5m-data-1.2-intro-database/blob/main/images/SocialMediaPostsandFollowers.png)
 ```
 
 ### Question 2
