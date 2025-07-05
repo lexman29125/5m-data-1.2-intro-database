@@ -20,9 +20,13 @@ Each entity has the following attributes:
 
 Answer:
 
+![Alt text](./images/SocialMediaPostsandFollowers.png)
 ```dbml
-![Alt text](images/SocialMediaPostsandFollowers.png)
+![Alt text](./images/SocialMediaPostsandFollowers.png)
 ![Alt text](https://github.com/lexman29125/5m-data-1.2-intro-database/blob/main/images/SocialMediaPostsandFollowers.png)
+<img src="./images/SocialMediaPostsandFollowers.png" alt="Diagram" width="300"/>
+![ERD](./images/SocialMediaPostsandFollowers.png)
+![ERD](./assets/erd.png)
 ```
 
 ### Question 2
