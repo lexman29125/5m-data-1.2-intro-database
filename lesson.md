@@ -106,7 +106,7 @@ Ref: cars.customer_id > customers.id // many-to-one
 
 Ref: accidents.car_id > cars.id // many-to-one
 ```
-
+![Alt text](./images/carInsuranceCompany.png)
 #### 2.4.2 Scenario 2
 
 Construct an ERD for a school system whose classes have students and teachers. Each student belongs to a single class. Each teacher may teach more than one class, and each class may have more than one teacher.
@@ -118,13 +118,72 @@ Each entity has the following attributes:
 - Class: id, name, teacher_id
 
 > Write the DBML to create the ERD.
+```dbml
+Table student {
+  id int [pk, increment]
+  name varchar
+  address varchar
+  phone varchar
+  email varchar
+  class_id int
+}
 
+Table teacher {
+  id int [pk, increment]
+  name varchar
+  address varchar
+  phone varchar
+  email varchar
+}
+
+Table class {
+  id int [pk, increment]
+  name varchar
+  teacher_id int
+}
+
+Ref: student.class_id > class.id // many-to-one
+Ref: teacher.id <> class.teacher_id // many to many
+```
 #### 2.4.3 Scenario 3
 
 Construct an ERD for a company that sells movies online. The company has a website where customers can browse available movies and place orders. Each order can contain multiple movies.
 
 > List the entities and attributes. Write the DBML to create the ERD.
+```dbml
+Table customers {
+  id int [pk, increment]
+  username varchar
+  email varchar
+  created_at datetime
+}
 
+Table movies {
+  id int [pk, increment]
+  title varchar
+  description text
+  price int
+  created_at datetime
+}
+
+Table ecommerce.orders {
+  id int [pk, increment]
+  customer_id int
+  created_at datetime
+}
+
+Table ecommerce.order_items {
+  id int [pk, increment]
+  order_id int
+  movie_id int
+  quantity int
+  created_at datetime
+}
+
+Ref: ecommerce.orders.customer_id > customers.id // many-to-one
+Ref: ecommerce.order_items.order_id > ecommerce.orders.id // many-to-one
+Ref: ecommerce.order_items.movie_id > movies.id // many-to-one
+```
 ---
 
 ## Part 3 - Normalization
