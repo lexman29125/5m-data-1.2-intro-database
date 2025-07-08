@@ -166,13 +166,13 @@ Table movies {
   created_at datetime
 }
 
-Table ecommerce.orders {
+Table orders {
   id int [pk, increment]
   customer_id int
   created_at datetime
 }
 
-Table ecommerce.order_items {
+Table order_items {
   id int [pk, increment]
   order_id int
   movie_id int
@@ -180,9 +180,9 @@ Table ecommerce.order_items {
   created_at datetime
 }
 
-Ref: ecommerce.orders.customer_id > customers.id // many-to-one
-Ref: ecommerce.order_items.order_id > ecommerce.orders.id // many-to-one
-Ref: ecommerce.order_items.movie_id > movies.id // many-to-one
+Ref: orders.customer_id > customers.id // many-to-one
+Ref: order_items.order_id > orders.id // many-to-one
+Ref: order_items.movie_id > movies.id // many-to-one
 ```
 ---
 
