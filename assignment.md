@@ -22,7 +22,7 @@ Answer:
 
 ![Alt text](./images/SocialMediaPostsandFollowers.png)
 ```dbml
-![Alt text](https://github.com/lexman29125/5m-data-1.2-intro-database/blob/main/images/SocialMediaPostsandFollowers.png)
+https://github.com/lexman29125/5m-data-1.2-intro-database/blob/main/images/SocialMediaPostsandFollowers.png
 ```
 
 ### Question 2
@@ -40,7 +40,7 @@ Answer:
 ![Alt text](./images/BookstoreShoppingCart.png)
 
 ```dbml
-![Alt text](https://github.com/lexman29125/5m-data-1.2-intro-database/blob/73d98be4acda4f5362604734652d56114ee58289/images/BookstoreShoppingCart.png)
+https://github.com/lexman29125/5m-data-1.2-intro-database/blob/main/images/BookstoreShoppingCart.png
 ```
 
 ## Submission
